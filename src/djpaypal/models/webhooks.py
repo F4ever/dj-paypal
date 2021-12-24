@@ -112,6 +112,11 @@ class WebhookEvent(PaypalObject):
 		if resource_type == "sale":
 			from .payments import Sale
 			return Sale
+		if resource_type == "subscription":
+			from .plan import Subscription
+			return Subscription
+		
+		print(f'RES TYPE: {resource_type}')
 		raise NotImplementedError("Unimplemented webhook resource: %r" % (self.resource_type))
 
 	@property

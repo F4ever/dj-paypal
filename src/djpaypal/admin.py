@@ -208,3 +208,18 @@ class WebhookEventTriggerAdmin(admin.ModelAdmin):
 		return False
 
 	actions = (reverify, reprocess)
+
+
+@admin.register(models.Product)
+class ProductAdmin(admin.ModelAdmin):
+	pass
+
+
+@admin.register(models.Product)
+class PlanAdmin(admin.ModelAdmin):
+	pass
+
+
+@admin.register(models.Product)
+class SubscriptionAdmin(admin.ModelAdmin):
+	pass
