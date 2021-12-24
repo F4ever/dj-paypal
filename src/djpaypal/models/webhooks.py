@@ -75,6 +75,7 @@ class WebhookEvent(PaypalObject):
 	create_time = models.DateTimeField(db_index=True, editable=False)
 	event_type = models.CharField(max_length=64, editable=False)
 	resource_type = models.CharField(max_length=64, editable=False)
+	resource_version = models.CharField(max_length=64, editable=False)
 	resource = JSONField(editable=False)
 	status = models.CharField(max_length=64, blank=True, editable=False)
 	summary = models.CharField(max_length=256, editable=False)
