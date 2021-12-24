@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dj-paypal"
+name = "djpaypal"
 version = "0.16.0"
 description = "Django / Paypal integration (based on dj-stripe)"
 authors = [
@@ -7,7 +7,7 @@ authors = [
 	"Jerome Leclanche <jerome@leclan.ch>"
 ]
 readme = "README.md"
-repository = "https://github.com/dj-stripe/dj-paypal"
+repository = "https://github.com/F4ever/dj-paypal"
 keywords = ["django", "paypal", "payments"]
 classifiers = [
 	"Development Status :: 5 - Production/Stable",
